@@ -1,0 +1,17 @@
+39  conda install nvidia/label/cuda-11.8.0::cuda-toolkit -y
+40  ls
+41  git clone https://github.com/yuichiro2023/Multi_DPO.git
+42  cd Multi_DPO/DPO/
+43  ls
+45  conda install pytorch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 pytorch-cuda=11.8 -c pytorch -c nvidia -y
+46  python Multi_DPO.py
+47  pip install transformers
+49  pip install datasets
+51  pip install accelerate
+53  huggingface-cli login
+55  pip install flash_attn
+57  pip install -i https://pypi.org/simple/ bitsandbytes
+58  python Multi_DPO.py
+60  conda env export > environment.yml
+61  cat environment.yml
+62  history
